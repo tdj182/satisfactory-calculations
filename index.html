@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Factory Stuff</title>
+  </head>
+  <body>
+    <h1>My Factory Planner</h1>
+
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <h2>
+          <a
+            data-toggle="collapse"
+            href="#base-materials-collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="base-materials-collapse"
+          >
+            Base Materials
+          </a>
+        </h2>
+        <div class="show" id="base-materials-collapse">
+          <div id="base-materials"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h2>
+          <a
+            data-toggle="collapse"
+            href="#items-collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="items-collapse"
+          >
+            Items
+          </a>
+        </h2>
+        <div class="show" id="items-collapse">
+          <div id="items"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="buildings-container">
+            <button id="add-building-button" class="btn btn-primary">
+              Add Building
+            </button>
+          </div>
+          <button id="calculate-button" class="btn btn-success mt-3">
+            Calculate
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form template to add a new building -->
+    <!-- <template id="add-building-form-template">
+      <form id="add-building-form">
+        <label for="item-select">Item:</label>
+        <select id="item-select"></select>
+        <br />
+        <label for="recipe-select">Recipe:</label>
+        <select id="recipe-select"></select>
+        <br />
+        <label for="building-count-input">Building Count:</label>
+        <input type="number" id="building-count-input" min="1" />
+        <br />
+        <label for="clock-speed-input">Clock Speed:</label>
+        <input
+          type="number"
+          id="clock-speed-input"
+          min="0"
+          max="2.5"
+          step="0.1"
+        />
+        <br />
+        <button type="submit">Add</button>
+        <button type="button" id="cancel-add-building-button">Cancel</button>
+      </form>
+    </template> -->
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

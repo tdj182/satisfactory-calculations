@@ -1,0 +1,47 @@
+#base-materials, #items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 12rem;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.card-body {
+  /* width: 10rem; */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.produced-input {
+  width: 6rem;
+}
+
+.btn-remove {
+  height: 2.5rem;
+}
+
+.output-amount {
+  text-decoration: underline;
+}
